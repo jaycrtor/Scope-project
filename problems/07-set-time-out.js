@@ -20,6 +20,18 @@ funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 // 1. hand in a function and a number milliseconds
 // 2. global.setTimeout function to invoke the passed in function in time amount of seconds
 // Your code here
+function funcTimer(time, func){
+ setTimeout(func,time)
+}
+
+
+
+
+// function restFunc() {
+//   console.log("rest time!")
+// }
+
+// funcTimer(5000, restFunc); // in 5 seconds prints: "Party time!"
 
 
 // function partyFunc () {
