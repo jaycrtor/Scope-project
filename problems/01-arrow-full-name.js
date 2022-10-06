@@ -17,12 +17,11 @@ arrowGetFullName(p2); // => 'Charlie Brown'
 // 2. return string containing their full name
 // 3. using const keyword .
 
-const arrowGetFullName = (person) =>{ let fullName = ' '
-let p = person.filter((fullName,lastName)=>{
-  return p
-})
-return fullName
+const arrowGetFullName = (person) =>{ 
+
+return person.firstName+' '+person.lastName
 }
+
 let p1 = {firstName: 'John', lastName: 'Doe'};
 arrowGetFullName(p1); // => 'John Doe'
 let p2 = {firstName: 'Charlie', lastName: 'Brown', age: 9};
