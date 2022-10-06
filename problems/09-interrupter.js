@@ -13,7 +13,7 @@ Invoking the interrupter function again:
 let rudePerson2 = interrupter("yo"); // => returns a function
 console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 
-
+// 
 ***********************************************************************/
 function interrupter(interruptingWord) {
   return function (sentence) {
