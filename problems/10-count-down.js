@@ -29,11 +29,7 @@ Example 4:
 ***********************************************************************/
 
 // Your code here
-function countDownTimer(n){
-  
-
-}
-console.log(countDownTimer(0)); // prints "Happy New Year!"
+ // prints "Happy New Year!"
 // let oneDay = countDownTimer(1); // returns a function
 // console.log(oneDay()); // prints "Happy New Year!"
 
@@ -47,6 +43,46 @@ console.log(countDownTimer(0)); // prints "Happy New Year!"
 // console.log(threeDays()); // returns a function
 // console.log(threeDays()); // returns a function
 // console.log(threeDays()); // prints "Happy New Year!"
+
+// function countDownTimer(n){
+//   let word = "Happy New Year!"
+//   for (let i=n; i>=0; i--) {
+// if (i===0){
+//   return word
+// } else {
+//   return function(){}
+// }
+// }
+// }
+
+function countDownTimer(n) {
+
+if (n===0){
+  return "Happy New Year!"
+}
+
+const count=()=>{
+
+  n-=1
+  if (n===0) {
+    return "Happy New Year!"
+  } else {
+    return count;
+  }
+}
+return count;
+}
+
+
+
+//console.log(countDownTimer(0)); // prints "Happy New Year!"
+
+let threeDays = countDownTimer(3); // returns a function
+console.log(threeDays()); // returns a function
+console.log(threeDays()); // returns a function
+console.log(threeDays()); // prints "Happy New Year!"
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
