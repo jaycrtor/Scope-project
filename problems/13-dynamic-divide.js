@@ -18,7 +18,7 @@ divideByFive(50); // returns 10
 
 ***********************************************************************/
 
-// Your code here
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
