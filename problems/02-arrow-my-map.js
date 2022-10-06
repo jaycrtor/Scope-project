@@ -17,8 +17,18 @@ let result2 = arrowMyMap(['run', 'Forrest'], yell);
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 ***********************************************************************/
+// 1. using fat arrow accept an array and callback as arg
+// 2. return an array of new ele obtained by calling the call back on each ele of array passing ele
+// 3. use const keyword
+let arrowMyMap = ((array,cb) =>{
+  let arr = [];
+  for (let i = 0 ; i < array.length ; i++){
+    let el = array[i]
+    arr.push(cb(el))
+  }
+  return arr
+})
 
-// Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
