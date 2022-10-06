@@ -29,6 +29,10 @@ function lazyAdder(firstNum){
   }
 }
 
+let func1 = lazyAdder(10);
+let func2 = func1(20);
+let total = func2(3);
+console.log(total); // prints 33
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
