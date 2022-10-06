@@ -12,6 +12,20 @@ arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b
 
 // Your code here
 
+let arrowMirrorArray = (array) => {
+let arr=array
+
+for (let j=array.length-1; j>=0; j--) {
+let revElement=array[j]
+
+arr.push(revElement)
+}
+  return arr;
+}
+
+
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
