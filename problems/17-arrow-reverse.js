@@ -5,14 +5,20 @@ reversed.
 Write this function using a fat arrow function!
 
 Examples:
+
+
+
+***********************************************************************/
+const arrowReverseString = str => {
+let split = (str.split(''))
+let reverse = split.reverse()
+return reverse.join('')
+
+}
 let result1 = arrowReverseString("hello"); // returns "olleh"
 let result2 = arrowReverseString("garden"); // returns "nedrag"
 let result3 = arrowReverseString("potato"); // returns "otatop"
 
-
-***********************************************************************/
-
-// Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 
