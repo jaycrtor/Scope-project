@@ -22,12 +22,22 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
   fat-arrow function
 ***********************************************************************/
 function lazyAdder(firstNum){
-  return function (secondNum){
-    return function (thirdNum){
-      return firstNum + secondNum + thirdNum
+  return function(secondNum){
+    return function(thirdNum){
+      return number = firstNum + secondNum + thirdNum
     }
   }
 }
+
+
+
+// function lazyAdder(firstNum){
+//   return function (secondNum){
+//     return function (thirdNum){
+//       return firstNum + secondNum + thirdNum
+//     }
+//   }
+// }
 let firstAdd = lazyAdder(1);
 let secondAdd = firstAdd(2);
 let sum = secondAdd(3);
