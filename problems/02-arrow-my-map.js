@@ -20,14 +20,19 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 // 1. using fat arrow accept an array and callback as arg
 // 2. return an array of new ele obtained by calling the call back on each ele of array passing ele
 // 3. use const keyword
-let arrowMyMap = ((array,cb) =>{
+const arrowMyMap= (array,cb) => {
   let arr = [];
   for (let i = 0 ; i < array.length ; i++){
-    let el = array[i]
-    arr.push(cb(el))
+    arr.push((cb(array[i],i,array)))
   }
   return arr
-})
+
+
+
+
+}
+let result1 = arrowMyMap([100, 25, 81, 64], Math.sqrt);
+console.log(result1);   // [ 10, 5, 9, 8 ]
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -37,3 +42,11 @@ try {
 } catch (e) {
   module.exports = null;
 }
+// let arrowMyMap = ((array,cb) =>{
+//   let arr = [];
+//   for (let i = 0 ; i < array.length ; i++){
+//     let el = array[i]
+//     arr.push(cb(el))
+//   }
+//   return arr
+// })

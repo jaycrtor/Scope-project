@@ -14,12 +14,10 @@ let result3 = addFive(37); // returns 42
 
 
 ***********************************************************************/
+let addFive = (Number) => { Number += 5 ; return Number}
 
-// Your code here
-// 1. Function addFive accept number and return that number + 5
-// 2. Write this function on a single line and utilize a fat arrow function's
-// ability to implicitly return by leaving out your own return stament
-const addFive = (number) => { let result = number + 5 ; return result}
+
+
 
 
 
@@ -32,3 +30,7 @@ try {
 } catch (e) {
   module.exports = null;
 }
+// 1. Function addFive accept number and return that number + 5
+// 2. Write this function on a single line and utilize a fat arrow function's
+// ability to implicitly return by leaving out your own return stament
+// const addFive = (number) => { let result = number + 5 ; return result}

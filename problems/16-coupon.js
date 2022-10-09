@@ -1,5 +1,5 @@
 /***********************************************************************
-Write a function named: coupon(discount). The coupon function will intake a
+lsWrite a function named: coupon(discount). The coupon function will intake a
 number to apply as a discount, and will return a function that accepts an array
 of prices. Every call to the function returned by coupon will return the array
 of prices with the discount applied.
@@ -14,7 +14,11 @@ console.log(twentyPercent([10, 20, 30])); // [ 8, 16, 24 ]
 
 
 ***********************************************************************/
-
+// 1. counpon intake a number to apply as a discount and return function accept an array of prices
+// 2. every call , function returned by coupon will return the array of prices with the discount applied
+function coupon(discount){
+  discount = discount
+}
 // Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
